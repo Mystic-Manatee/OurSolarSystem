@@ -1,0 +1,19 @@
+.outside {
+    display: table;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.buffer {
+    display: table-cell;
+    vertical-align: top;
+}
+
+.content {
+    margin-left: auto;
+    margin-right: auto; 
+    width: 800px;
+    background-color: white;
+}
+
