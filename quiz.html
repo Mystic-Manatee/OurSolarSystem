@@ -3,6 +3,8 @@
     <title>Our Solar System</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/main.js"></script>
   </head>
   <body style="background-image: url(ep_naturalblack.png); background-repeat: repeat;"> 
     <div class="topnav" id="myTopnav">
@@ -14,8 +16,66 @@
       <div class="outside">
         <div class="buffer">
           <div class="content">
-            <h1>NIBBA</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus pellentesque odio at gravida auctor. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec molestie enim eros, in elementum felis fringilla eget. Curabitur a arcu sed massa fringilla sagittis. Donec pretium, purus non tincidunt tincidunt, eros turpis congue mauris, vitae vehicula tortor velit non sapien. Aliquam egestas nisi nec lacus pellentesque suscipit. Etiam ac nibh non arcu dapibus fermentum. Pellentesque pretium nunc sed lectus tempus rhoncus eget ut arcu. Pellentesque venenatis auctor lacus vitae faucibus. Nam at ex at eros consequat pulvinar.</p>
+            <div class="results"></div>
+            <div class="replaced-content">
+              <h1>Quiz</h1>
+              <p>Quiz time! All answers can be found in the readings section of the website. If you feel like you are up for the challenge then continue, if not click <a href="readings.html">here</a> to go back and revise.</p>
+              <p>To complete the quiz you need to choose 60% or more correct answers.</p>
+              <form name="quiz-form" method="post" id="test">
+                <h2>Q1: The Sun is a ___ sized star?</h2>
+                <input id="Q1" type="radio" name="question1" value="correct">Medium</br>
+                <input id="Q1" type="radio" name="question1" value="wrong">Large</br>
+                <input id="Q1" type="radio" name="question1" value="wrong">Small</br>
+                <input id="Q1" type="radio" name="question1" value="wrong">Giant</br>
+                <h2>Q2: Mars is what kind of planet?</h2>
+                <input id="Q2" type="radio" name="question2" value="wrong">Jovian</br>
+                <input id="Q2" type="radio" name="question2" value="correct">Terrestrial</br>
+                <input id="Q2" type="radio" name="question2" value="wrong">Astral</br>
+                <input id="Q2" type="radio" name="question2" value="wrong">Galilean</br>
+                <h2>Q3: Neptune is what kind of planet?</h2>
+                <input id="Q3" type="radio" name="question3" value="wrong">Galilean</br>
+                <input id="Q3" type="radio" name="question3" value="wrong">Astral</br>
+                <input id="Q3" type="radio" name="question3" value="wrong">Terrestrial</br>
+                <input id="Q3" type="radio" name="question3" value="correct">Jovian</br>
+                <h2>Q4: Which planet has the most moons?</h2>
+                <input id="Q4" type="radio" name="question4" value="wrong">Saturn</br>
+                <input id="Q4" type="radio" name="question4" value="wrong">Venus</br>
+                <input id="Q4" type="radio" name="question4" value="correct">Jupiter</br>
+                <input id="Q4" type="radio" name="question4" value="wrong">Uranus</br>
+                <h2>Q5: What is the smallest planet in the solar system?</h2>
+                <input id="Q5" type="radio" name="question5" value="wrong">Venus</br>
+                <input id="Q5" type="radio" name="question5" value="wrong">Mars</br>
+                <input id="Q5" type="radio" name="question5" value="correct">Pluto</br>
+                <input id="Q5" type="radio" name="question5" value="wrong">Uranus</br>
+                <h2>Q6: What is the largest planet in the solar system?</h2>
+                <input id="Q6" type="radio" name="question6" value="wrong">Mars</br>
+                <input id="Q6" type="radio" name="question6" value="wrong">Neptune</br>
+                <input id="Q6" type="radio" name="question6" value="wrong">Saturn</br>
+                <input id="Q6" type="radio" name="question6" value="correct">Jupiter</br>
+                <h2>Q7: What types of planets have ring systems?</h2>
+                <input id="Q7" type="radio" name="question7" value="wrong">Galilean</br>
+                <input id="Q7" type="radio" name="question7" value="wrong">Terrestrial</br>
+                <input id="Q7" type="radio" name="question7" value="correct">Jovian</br>
+                <input id="Q7" type="radio" name="question7" value="wrong">Astral</br>
+                <h2>Q8: What is the third planet in the solar system?</h2>
+                <input id="Q8" type="radio" name="question8" value="wrong">Mars</br>
+                <input id="Q8" type="radio" name="question8" value="wrong">Saturn</br>
+                <input id="Q8" type="radio" name="question8" value="wrong">Pluto</br>
+                <input id="Q8" type="radio" name="question8" value="correct">Earth</br>
+                <h2>Q9: Pluto is located in what area of the solar system?</h2>
+                <input id="Q9" type="radio" name="question9" value="wrong">The Asteroid Belt</br>
+                <input id="Q9" type="radio" name="question9" value="correct">The Kuiper Belt</br>
+                <input id="Q9" type="radio" name="question9" value="wrong">The Rings of Saturn</br>
+                <input id="Q9" type="radio" name="question9" value="wrong">The Oort Cloud</br>
+                <h2>Q10: Which of these planets is NOT a Jovian planet?</h2>
+                <input id="Q10" type="radio" name="question10" value="wrong">Neptune</br>
+                <input id="Q10" type="radio" name="question10" value="wrong">Jupiter</br>
+                <input id="Q10" type="radio" name="question10" value="correct">Venus</br>
+                <input id="Q10" type="radio" name="question10" value="wrong">Uranus</br>
+                <span></span>
+                <input type="button" name="submit" onclick="quiz()" value="Submit"/>
+              </form>
+            </div>
           </div>
         </div>
       </div>
