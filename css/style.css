@@ -46,10 +46,6 @@
     color: white;
 }
 
-.list{
-    list-style-type: none;
-}
-
 .heading1 {
     padding-left: 15px;
 }
@@ -77,4 +73,13 @@ a .next .previous {
 
 .next {
     float: right;
+}
+
+#ending{
+    padding-bottom: 10px;
+}
+
+#readings-description{
+    padding-left: 10px;
+    padding-bottom: 10px;
 }
