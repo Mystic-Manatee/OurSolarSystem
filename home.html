@@ -14,19 +14,37 @@
     <div class="outside">
       <div class="buffer">
         <div class="content">
-          <img src="images/ICPlaceholder.png">
-          <h2>Welcome to my website, it is currently in development.</h2>
-          <h3>To do:</h3>
-            <ul>
-              <li>Add images to the readable content</li>
-              <li>Add simulation.</li>
-              <li>Add image carrousel to home page.</li>
-              <li>Add navicon.</li>
-              <li>General formatting and styling.</li>
-              <li>Change "readings" tab into something more descriptive.</li>
-            </ul>
+          <div class="slideshow-container">
+            <div class="mySlides fade">
+              <div class="numbertext">1 / 3</div>
+              <a href="readings.html">
+                <img src="images/carousel/galaxy-background.png">
+              </a>
+            </div>
+            <div class="mySlides fade">
+              <div class="numbertext">2 / 3</div>
+              <a href="quiz.html">
+                <img src="images/carousel/planets-of-the-solar-system.jpg">
+              </a>
+            </div>
+            <div class="mySlides fade">
+              <div class="numbertext">3 / 3</div>
+              <a href="sun.html">
+                <img src="images/carousel/space-aia-eruption-of-sun-hd.jpg">
+              </a>
+            </div>
+            <a class="img-prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="img-next" onclick="plusSlides(1)">&#10095;</a>
+          </div>
+          <br>
+          <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span> 
+            <span class="dot" onclick="currentSlide(2)"></span> 
+            <span class="dot" onclick="currentSlide(3)"></span> 
+          </div>
         </div>
       </div>
     </div>
+    <script src="js/image-carousel.js"></script>
   </body>
 </html>
