@@ -25,11 +25,11 @@
               <span></span>
               <p>Uranus has 27 moons, however only 5 are considered to be major moons.</p>
               <span></span>
-              <p>Miranda &minus; The smallest and innermost of Uranus&apos; major moons. It is made of just over 50% water ice and the rest is silicate rock and other materials. The surface of the moon has patch worked regions of broken terrain indicating that the moon is or was geologically active. This moon is also home to the largest cliff in the solar system, named Verona Rupes it is over 5km high..</p>
-              <p>Ariel &minus; Not much is known about this moon. The only close up footage was taken by a single pass of the Voyager 2 spacecraft in 1986. We know it is made up of water ice and rocky materials and that it has very distinct areas of terrain, these categories are cratered terrain, ridged terrain and plains. .</p>
-              <p>Umbriel &minus; Umbriel is made primarily of rock with an ice water surface. Umbriel only has one recognised geologic feature, craters.</p>
-              <p>Titania &minus; Titania is the largest moon of Saturn. It is made primarily of rock, water ice and frozen carbon dioxide. The surface of Titania has far less impact craters when compared to other moons of Uranus, this leads scientists to believe that this moon is younger than the other major moons.</p>
-              <p>Oberon &minus; Oberon is the outermost moon of Uranus. Oberon is the most heavily cratered of all of the Uranian moons, this high amount of craters indicates that Oberon is the most ancient of Uranus&apos; major moons.</p>
+              <p><b>Miranda</b> &minus; The smallest and innermost of Uranus&apos; major moons. It is made of just over 50% water ice and the rest is silicate rock and other materials. The surface of the moon has patch worked regions of broken terrain indicating that the moon is or was geologically active. This moon is also home to the largest cliff in the solar system, named Verona Rupes it is over 5km high..</p>
+              <p><b>Ariel</b> &minus; Not much is known about this moon. The only close up footage was taken by a single pass of the Voyager 2 spacecraft in 1986. We know it is made up of water ice and rocky materials and that it has very distinct areas of terrain, these categories are cratered terrain, ridged terrain and plains. .</p>
+              <p><b>Umbriel</b> &minus; Umbriel is made primarily of rock with an ice water surface. Umbriel only has one recognised geologic feature, craters.</p>
+              <p><b>Titania</b> &minus; Titania is the largest moon of Saturn. It is made primarily of rock, water ice and frozen carbon dioxide. The surface of Titania has far less impact craters when compared to other moons of Uranus, this leads scientists to believe that this moon is younger than the other major moons.</p>
+              <p><b>Oberon</b> &minus; Oberon is the outermost moon of Uranus. Oberon is the most heavily cratered of all of the Uranian moons, this high amount of craters indicates that Oberon is the most ancient of Uranus&apos; major moons.</p>
               <span></span>
               <span></span>
               <h2>Uranus facts</h2>
@@ -42,11 +42,64 @@
               <span></span>
               <p>Only one space craft has ever gone to Uranus. The Voyager 2 mission went to the planet in 1986 and took many of the photos that are still used today by scientists studying the planet. No further missions are currently planned to visit the planet.</p></br>
               <h2>Images</h2></br>
+              <div class="lb-row">
+                <div class="lb-column">
+                  <img src="images/Uranus/small/Uranus.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow">
+                </div>
+                <div class="lb-column">
+                  <img src="images/Uranus/small/Voyager2_Uranus.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow">
+                </div>
+                <div class="lb-column">
+                  <img src="images/Uranus/small/Uranus_moons.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow">
+                </div>
+                <div class="lb-column">
+                  <img src="images/Uranus/small/voyager-2-titania-1.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow">
+                </div>
+              </div>
+              <div id="myModal" class="modal">
+                <span class="close cursor" onclick="closeModal()">&times;</span>
+                <div class="modal-content">
+                  <div class="mySlides">
+                    <div class="numbertext">1 / 4</div>
+                    <img src="images/Uranus/large/Uranus.jpg" style="width:100%">
+                  </div>
+                  <div class="mySlides">
+                    <div class="numbertext">2 / 4</div>
+                    <img src="images/Uranus/large/Voyager2_Uranus.jpg" style="width:100%">
+                  </div>
+                  <div class="mySlides">
+                    <div class="numbertext">3 / 4</div>
+                    <img src="images/Uranus/large/Uranus_moons.jpg" style="width:100%">
+                  </div>
+                  <div class="mySlides">
+                    <div class="numbertext">4 / 4</div>
+                    <img src="images/Uranus/large/voyager-2-titania-1.jpg" style="width:100%">
+                  </div>
+                  <a class="lb-prev" onclick="plusSlides(-1)">&#10094;</a>
+                  <a class="lb-next" onclick="plusSlides(1)">&#10095;</a>
+                  <div class="caption-container">
+                    <p id="caption"></p>
+                  </div>
+                  <div class="lb-column">
+                    <img class="demo" src="images/Uranus/small/Uranus.jpg" onclick="currentSlide(1)" alt="An image of Uranus">
+                  </div>
+                  <div class="lb-column">
+                    <img class="demo" src="images/Uranus/small/Voyager2_Uranus.jpg" onclick="currentSlide(2)" alt="An artist's rendition of the Voyager 2 probe flying past Uranus">
+                  </div>
+                  <div class="lb-column">
+                    <img class="demo" src="images/Uranus/small/Uranus_moons.jpg" onclick="currentSlide(3)" alt="A diagram of the moons of Uranus">
+                  </div>
+                  <div class="lb-column">
+                    <img class="demo" src="images/Uranus/small/voyager-2-titania-1.jpg" onclick="currentSlide(4)" alt="One of the only images of Titania taken by the Voyager 2 probe">
+                  </div>
+                </div>
+              </div></br>
               <a href="saturn.html" class="previous">&laquo; Previous: Saturn</a>
-              <a href="neptune.html" class="Next">Next: Neptune &raquo;</a>
+              <a href="neptune.html" class="next">Next: Neptune &raquo;</a>
             </div>
           </div>
         </div>
       </div>
+      <script src="js/lightbox.js"></script>
   </body>
 </html>

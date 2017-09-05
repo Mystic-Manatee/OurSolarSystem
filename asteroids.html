@@ -44,11 +44,64 @@
                 <li>Asteroids reside in the asteroid belt between Mars and Jupiter while comets come from the Kuiper Belt in the outer reaches of the solar system.</li>
               </ul></br>
               <h2>Images</h2></br>
+              <div class="lb-row">
+                <div class="lb-column">
+                  <img src="images/Asteroids/small/asteroid-belt.jpeg" onclick="openModal();currentSlide(1)" class="hover-shadow">
+                </div>
+                <div class="lb-column">
+                  <img src="images/Asteroids/small/Asteroid-shapes-craters.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow">
+                </div>
+                <div class="lb-column">
+                  <img src="images/Asteroids/small/parts-of-a-comet.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow">
+                </div>
+                <div class="lb-column">
+                  <img src="images/Asteroids/small/comet_halley.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow">
+                </div>
+              </div>
+              <div id="myModal" class="modal">
+                <span class="close cursor" onclick="closeModal()">&times;</span>
+                <div class="modal-content">
+                  <div class="mySlides">
+                    <div class="numbertext">1 / 4</div>
+                    <img src="images/Asteroids/large/asteroid-belt.jpeg" style="width:100%">
+                  </div>
+                  <div class="mySlides">
+                    <div class="numbertext">2 / 4</div>
+                    <img src="images/Asteroids/large/Asteroid-shapes-craters.jpg" style="width:100%">
+                  </div>
+                  <div class="mySlides">
+                    <div class="numbertext">3 / 4</div>
+                    <img src="images/Asteroids/large/parts-of-a-comet.jpg" style="width:100%">
+                  </div>
+                  <div class="mySlides">
+                    <div class="numbertext">4 / 4</div>
+                    <img src="images/Asteroids/large/comet_halley.jpg" style="width:100%">
+                  </div>
+                  <a class="lb-prev" onclick="plusSlides(-1)">&#10094;</a>
+                  <a class="lb-next" onclick="plusSlides(1)">&#10095;</a>
+                  <div class="caption-container">
+                    <p id="caption"></p>
+                  </div>
+                  <div class="lb-column">
+                    <img class="demo" src="images/Asteroids/small/asteroid-belt.jpeg" onclick="currentSlide(1)" alt="An image showing the location of the Asteroid Belt in our Solar System">
+                  </div>
+                  <div class="lb-column">
+                    <img class="demo" src="images/Asteroids/small/Asteroid-shapes-craters.jpg" onclick="currentSlide(2)" alt="An image of some of the larger Asteroids found">
+                  </div>
+                  <div class="lb-column">
+                    <img class="demo" src="images/Asteroids/small/parts-of-a-comet.jpg" onclick="currentSlide(3)" alt="A diagram showing the parts that make up a Comet">
+                  </div>
+                  <div class="lb-column">
+                    <img class="demo" src="images/Asteroids/small/comet_halley.jpg" onclick="currentSlide(4)" alt="Perhaps one of the most well known Comets, Halley's Comet">
+                  </div>
+                </div>
+              </div></br>
               <a href="pluto.html" class="previous">&laquo; Previous: Pluto</a>
               <a href="kbo.html" class="Next">Next: Kuiper Belt Objects &raquo;</a>
             </div>
           </div>
         </div>
       </div>
+      <script src="js/lightbox.js"></script>
   </body>
 </html>

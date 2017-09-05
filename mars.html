@@ -42,11 +42,64 @@
               <p>Finished missions &minus; Dawn, Phoenix, Rosetta, Sojourner, Mars Pathfinder, Mars Global Surveyor, Viking 1 lander, Viking 1 orbiter, Viking 2 lander, Viking 2 orbiter and Mariner 4, 6, 7 and 9.</p>
               <p>Currently active &minus; ExoMars Trace Gas Orbiter, MAVEN, Mars Orbiter Mission, Curiosity, Mars Reconnassance Orbiter, Opportunity, Mars Express, Mars Odyssey</p></br>
               <h2>Images</h2></br>
+              <div class="lb-row">
+                <div class="lb-column">
+                  <img src="images/Mars/small/Mars.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow">
+                </div>
+                <div class="lb-column">
+                  <img src="images/Mars/small/mars-curiosity.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow">
+                </div>
+                <div class="lb-column">
+                  <img src="images/Mars/small/curiosity-rover.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow">
+                </div>
+                <div class="lb-column">
+                  <img src="images/Mars/small/phobos_deimos.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow">
+                </div>
+              </div>
+              <div id="myModal" class="modal">
+                <span class="close cursor" onclick="closeModal()">&times;</span>
+                <div class="modal-content">
+                  <div class="mySlides">
+                    <div class="numbertext">1 / 4</div>
+                    <img src="images/Mars/large/Mars.jpg" style="width:100%">
+                  </div>
+                  <div class="mySlides">
+                    <div class="numbertext">2 / 4</div>
+                    <img src="images/Mars/large/mars-curiosity.jpg" style="width:100%">
+                  </div>
+                  <div class="mySlides">
+                    <div class="numbertext">3 / 4</div>
+                    <img src="images/Mars/large/curiosity-rover.jpg" style="width:100%">
+                  </div>
+                  <div class="mySlides">
+                    <div class="numbertext">4 / 4</div>
+                    <img src="images/Mars/large/phobos_deimos.jpg" style="width:100%">
+                  </div>
+                  <a class="lb-prev" onclick="plusSlides(-1)">&#10094;</a>
+                  <a class="lb-next" onclick="plusSlides(1)">&#10095;</a>
+                  <div class="caption-container">
+                    <p id="caption"></p>
+                  </div>
+                  <div class="lb-column">
+                    <img class="demo" src="images/Mars/small/Mars.jpg" onclick="currentSlide(1)" alt="An image of Mars">
+                  </div>
+                  <div class="lb-column">
+                    <img class="demo" src="images/Mars/small/mars-curiosity.jpg" onclick="currentSlide(2)" alt="An image through the eyes of the Curiosity rover on Mars">
+                  </div>
+                  <div class="lb-column">
+                    <img class="demo" src="images/Mars/small/curiosity-rover.jpg" onclick="currentSlide(3)" alt="An artist's rendition of the Curiosity rover on Mars">
+                  </div>
+                  <div class="lb-column">
+                    <img class="demo" src="images/Mars/small/phobos_deimos.jpg" onclick="currentSlide(4)" alt="The 2 moons of Mars: Phobos and Deimos">
+                  </div>
+                </div>
+              </div></br>
               <a href="earth.html" class="previous">&laquo; Previous: Earth</a>
               <a href="jupiter.html" class="Next">Next: Jupiter &raquo;</a>
             </div>
           </div>
         </div>
       </div>
+      <script src="js/lightbox.js"></script>
   </body>
 </html>

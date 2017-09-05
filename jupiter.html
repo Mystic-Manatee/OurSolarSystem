@@ -31,10 +31,10 @@
               <h3>Galilean moons</h3>
               <p>The largest 4 moons of Jupiter. These are some of the largest objects in the solar system outside of planets.</p>
               <span></span>
-              <p>Io &minus; Io is the fifth moon of Jupiter and the fourth largest in the solar system. Io is the most geologically active moon in the solar system, with over 400 volcanoes across its surface spewing sulphur as far as 300 kilometres into the air.</p>
-              <p>Europa &minus; Europa is the smallest of the Galilean moons, but despite being the smallest of the bunch it is still the sixth largest in the solar system. Europa is covered entirely by ice, with scientists theorising that below the frozen surface could be a large salt water ocean, if this is proven to be true then Europa would be the best bet of finding life beyond Earth within our solar system.</p>
-              <p>Ganymede &minus; Ganymede is the largest moon in the solar system and is larger than some planets such as Mercury and Pluto and if it were orbiting the Sun rather than Jupiter it would be classified as a planet itself. </p>
-              <p>Callisto &minus; Callisto is the fourth and final Galilean moon, made of rock and ice it is 99% the size of Mercury, and like Ganymede could be considered a planet if it orbited the Sun instead of Jupiter. Callisto is made of rock, iron and ice. When viewed through a telescope, Callisto is brighter than the Moon, since it is made of ice and ice reflects the Sun brighter than the rock of the Moon.</p>
+              <p><b>Io</b> &minus; Io is the fifth moon of Jupiter and the fourth largest in the solar system. Io is the most geologically active moon in the solar system, with over 400 volcanoes across its surface spewing sulphur as far as 300 kilometres into the air.</p>
+              <p><b>Europa</b> &minus; Europa is the smallest of the Galilean moons, but despite being the smallest of the bunch it is still the sixth largest in the solar system. Europa is covered entirely by ice, with scientists theorising that below the frozen surface could be a large salt water ocean, if this is proven to be true then Europa would be the best bet of finding life beyond Earth within our solar system.</p>
+              <p><b>Ganymede</b> &minus; Ganymede is the largest moon in the solar system and is larger than some planets such as Mercury and Pluto and if it were orbiting the Sun rather than Jupiter it would be classified as a planet itself. </p>
+              <p><b>Callisto</b> &minus; Callisto is the fourth and final Galilean moon, made of rock and ice it is 99% the size of Mercury, and like Ganymede could be considered a planet if it orbited the Sun instead of Jupiter. Callisto is made of rock, iron and ice. When viewed through a telescope, Callisto is brighter than the Moon, since it is made of ice and ice reflects the Sun brighter than the rock of the Moon.</p>
               <span></span>
               <h3>Outer moons</h3>
               <span></span>
@@ -52,11 +52,64 @@
               <span></span>
               <p>9 spacecraft have visited Jupiter so far, they are Pioneer 10 and 11, Voyager 1 and 2, Galileo, Cassini, Ulysses, New Horizons and Juno.</p></br>
               <h2>Images</h2></br>
+              <div class="lb-row">
+                <div class="lb-column">
+                  <img src="images/Jupiter/small/jupiter.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow">
+                </div>
+                <div class="lb-column">
+                  <img src="images/Jupiter/small/Jupiter_Rings.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow">
+                </div>
+                <div class="lb-column">
+                  <img src="images/Jupiter/small/Jupiter-GRS.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow">
+                </div>
+                <div class="lb-column">
+                  <img src="images/Jupiter/small/Jupiter_Moons.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow">
+                </div>
+              </div>
+              <div id="myModal" class="modal">
+                <span class="close cursor" onclick="closeModal()">&times;</span>
+                <div class="modal-content">
+                  <div class="mySlides">
+                    <div class="numbertext">1 / 4</div>
+                    <img src="images/Jupiter/large/jupiter.jpg" style="width:100%">
+                  </div>
+                  <div class="mySlides">
+                    <div class="numbertext">2 / 4</div>
+                    <img src="images/Jupiter/large/Jupiter_Rings.jpg" style="width:100%">
+                  </div>
+                  <div class="mySlides">
+                    <div class="numbertext">3 / 4</div>
+                    <img src="images/Jupiter/large/Jupiter-GRS.jpg" style="width:100%">
+                  </div>
+                  <div class="mySlides">
+                    <div class="numbertext">4 / 4</div>
+                    <img src="images/Jupiter/large/Jupiter_Moons.jpg" style="width:100%">
+                  </div>
+                  <a class="lb-prev" onclick="plusSlides(-1)">&#10094;</a>
+                  <a class="lb-next" onclick="plusSlides(1)">&#10095;</a>
+                  <div class="caption-container">
+                    <p id="caption"></p>
+                  </div>
+                  <div class="lb-column">
+                    <img class="demo" src="images/Jupiter/small/jupiter.jpg" onclick="currentSlide(1)" alt="An image of Jupiter">
+                  </div>
+                  <div class="lb-column">
+                    <img class="demo" src="images/Jupiter/small/Jupiter_Rings.jpg" onclick="currentSlide(2)" alt="A diagram showing the ring system of Jupiter">
+                  </div>
+                  <div class="lb-column">
+                    <img class="demo" src="images/Jupiter/small/Jupiter-GRS.jpg" onclick="currentSlide(3)" alt="The Great Red Spot storm on Jupiter">
+                  </div>
+                  <div class="lb-column">
+                    <img class="demo" src="images/Jupiter/small/Jupiter_Moons.jpg" onclick="currentSlide(4)" alt="The major moons of Jupiter">
+                  </div>
+                </div>
+              </div></br>
               <a href="mars.html" class="previous">&laquo; Previous: Mars</a>
-              <a href="saturn.html" class="Next">Next: Saturn &raquo;</a>
+              <a href="saturn.html" class="next">Next: Saturn &raquo;</a>
             </div>
           </div>
         </div>
       </div>
+      <script src="js/lightbox.js"></script>
   </body>
 </html>

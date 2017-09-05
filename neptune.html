@@ -25,8 +25,8 @@
               <span></span>
               <p>There are 14 moons of Neptune that can be sorted into two categories.</p>
               <span></span>
-              <p>Regular moons &minus; Regular moons are those moons that formed as the planet was forming. These moons are Naiad, Thalassa, Despina, Galatea, Larissa, S/2004 N 1 and Proteus.</p>
-              <p>Irregular moons &minus; Because of Neptune&apos;s strong gravitational pull some large astral bodies were caught in its pull while travelling past the planet and became moons for Neptune. These moons are: Triton, Nereid, Halimede, Sao, Laomedeia, Psamthe and Neso.</p>
+              <p><b>Regular moons</b> &minus; Regular moons are those moons that formed as the planet was forming. These moons are Naiad, Thalassa, Despina, Galatea, Larissa, S/2004 N 1 and Proteus.</p>
+              <p><b>Irregular moons</b> &minus; Because of Neptune&apos;s strong gravitational pull some large astral bodies were caught in its pull while travelling past the planet and became moons for Neptune. These moons are: Triton, Nereid, Halimede, Sao, Laomedeia, Psamthe and Neso.</p>
               <span></span>
               <span></span>
               <h2>Neptune facts</h2>
@@ -40,11 +40,64 @@
               <span></span>
               <p>The Voyager 2 mission is the only mission to have been past Neptune. No other missions are currently planned to go to the planet. </p></br>
               <h2>Images</h2></br>
+              <div class="lb-row">
+                <div class="lb-column">
+                  <img src="images/Neptune/small/Neptune.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow">
+                </div>
+                <div class="lb-column">
+                  <img src="images/Neptune/small/neptune_cross.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow">
+                </div>
+                <div class="lb-column">
+                  <img src="images/Neptune/small/hubbleneptunespot.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow">
+                </div>
+                <div class="lb-column">
+                  <img src="images/Neptune/small/neptune_moons.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow">
+                </div>
+              </div>
+              <div id="myModal" class="modal">
+                <span class="close cursor" onclick="closeModal()">&times;</span>
+                <div class="modal-content">
+                  <div class="mySlides">
+                    <div class="numbertext">1 / 4</div>
+                    <img src="images/Neptune/large/Neptune.jpg" style="width:100%">
+                  </div>
+                  <div class="mySlides">
+                    <div class="numbertext">2 / 4</div>
+                    <img src="images/Neptune/large/neptune_cross.jpg" style="width:100%">
+                  </div>
+                  <div class="mySlides">
+                    <div class="numbertext">3 / 4</div>
+                    <img src="images/Neptune/large/hubbleneptunespot.jpg" style="width:100%">
+                  </div>
+                  <div class="mySlides">
+                    <div class="numbertext">4 / 4</div>
+                    <img src="images/Neptune/large/neptune_moons.jpg" style="width:100%">
+                  </div>
+                  <a class="lb-prev" onclick="plusSlides(-1)">&#10094;</a>
+                  <a class="lb-next" onclick="plusSlides(1)">&#10095;</a>
+                  <div class="caption-container">
+                    <p id="caption"></p>
+                  </div>
+                  <div class="lb-column">
+                    <img class="demo" src="images/Neptune/small/Neptune.jpg" onclick="currentSlide(1)" alt="An image of Neptune">
+                  </div>
+                  <div class="lb-column">
+                    <img class="demo" src="images/Neptune/small/neptune_cross.jpg" onclick="currentSlide(2)" alt="A cross section of Neptune">
+                  </div>
+                  <div class="lb-column">
+                    <img class="demo" src="images/Neptune/small/hubbleneptunespot.jpg" onclick="currentSlide(3)" alt="An image of a storm similar to Jupiters Great Red Spot taken by the Hubble Telescope">
+                  </div>
+                  <div class="lb-column">
+                    <img class="demo" src="images/Neptune/small/neptune_moons.jpg" onclick="currentSlide(4)" alt="A diagram showing the major moons of Neptune">
+                  </div>
+                </div>
+              </div></br>
               <a href="uranus.html" class="previous">&laquo; Previous: Uranus</a>
               <a href="pluto.html" class="Next">Next: Pluto &raquo;</a>
             </div>
           </div>
         </div>
       </div>
+      <script src="js/lightbox.js"></script>
   </body>
 </html>

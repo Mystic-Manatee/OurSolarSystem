@@ -30,13 +30,13 @@
               <span></span>
               <p>Saturn has 62 moons, ranging in size from less than 1 kilometer in diameter all the way up to the largest moon Titan which is larger than Mercury. Saturn has a set of 7 &rdquo;main moons&rdquo; which are the planet&apos;s largest.</p>
               <span></span>
-              <p>Mimas &minus; The surface area of Mimas is roughly the size of Spain. The moon is made mainly of water ice and has a low density because of this. The moons most distinctive feature is a large crater 130 kilometers wide.</p>
-              <p>Enceladus &minus; Enceladus is about 500 kilometers in diameter and made of ice and rock. This moon is home to over 100 cryovolcanoes that spew out water vapour and other minerals such as sodium chloride.</p>
-              <p>Tethys &minus; Tethys has the lowest density of any moon in the solar system, this is due to it being made almost exclusively of water ice with very little amounts of rock. Tethys is home to a huge crater known as Odysseus which is 400 kilometers in diameter.</p>
-              <p>Dione &minus; Dione is made of water ice and a dense silicate rock core. The moon is also home to a large ocean underneath the icy surface.</p>
-              <p>Rhea &minus; Rhea is made primarily of water ice and rock, giving it a low density. Not much is known about Rhea, it was only in 2005 when the Cassini spacecraft went to Saturn that the theory of Rhea having a solid rock core was disproved through data received from the spacecraft.</p>
-              <p>Titan &minus; Titan is the second largest moon in the solar system, only behind Jupiter&apos;s moon Ganymede. Titan is the only moon to have a dense atmosphere and the only object other than Earth to have evidence of stable bodies of surface liquid. The moon is made primarily of water ice and rock. Titan&apos;s thick atmosphere prevented astronomers from gaining a better understanding of the moon&apos;s surface and it was only with the Cassini spacecraft&apos;s flyby of Saturn and its moons that we gained further insight into the unique properties of this moon with the discovery of liquid hydrocarbon on the surface. </p>
-              <p>Iapetus &minus; Iapetus is made of water ice and rocky material, giving it a low density. The moon has quite a few unique properties, most notably are is two-tone colouration, the fact it is more walnut shaped then spherical or ellipsoid like most other moons and it has large amounts of huge craters, five of which are over 350 kilometers wide with the largest, known as Turgis being over 580 kilometers in diameter.</p>
+              <p><b>Mimas</b> &minus; The surface area of Mimas is roughly the size of Spain. The moon is made mainly of water ice and has a low density because of this. The moons most distinctive feature is a large crater 130 kilometers wide.</p>
+              <p><b>Enceladus</b> &minus; Enceladus is about 500 kilometers in diameter and made of ice and rock. This moon is home to over 100 cryovolcanoes that spew out water vapour and other minerals such as sodium chloride.</p>
+              <p><b>Tethys</b> &minus; Tethys has the lowest density of any moon in the solar system, this is due to it being made almost exclusively of water ice with very little amounts of rock. Tethys is home to a huge crater known as Odysseus which is 400 kilometers in diameter.</p>
+              <p><b>Dione</b> &minus; Dione is made of water ice and a dense silicate rock core. The moon is also home to a large ocean underneath the icy surface.</p>
+              <p><b>Rhea</b> &minus; Rhea is made primarily of water ice and rock, giving it a low density. Not much is known about Rhea, it was only in 2005 when the Cassini spacecraft went to Saturn that the theory of Rhea having a solid rock core was disproved through data received from the spacecraft.</p>
+              <p><b>Titan</b> &minus; Titan is the second largest moon in the solar system, only behind Jupiter&apos;s moon Ganymede. Titan is the only moon to have a dense atmosphere and the only object other than Earth to have evidence of stable bodies of surface liquid. The moon is made primarily of water ice and rock. Titan&apos;s thick atmosphere prevented astronomers from gaining a better understanding of the moon&apos;s surface and it was only with the Cassini spacecraft&apos;s flyby of Saturn and its moons that we gained further insight into the unique properties of this moon with the discovery of liquid hydrocarbon on the surface. </p>
+              <p><b>Iapetus</b> &minus; Iapetus is made of water ice and rocky material, giving it a low density. The moon has quite a few unique properties, most notably are is two-tone colouration, the fact it is more walnut shaped then spherical or ellipsoid like most other moons and it has large amounts of huge craters, five of which are over 350 kilometers wide with the largest, known as Turgis being over 580 kilometers in diameter.</p>
               <span></span>
               <span></span>
               <h2>Saturn facts</h2>
@@ -52,11 +52,64 @@
               <p>Finished missions &minus; Pioneer 11, Voyager 1 and Voyager 2.</p>
               <p>Currently active &minus; Cassini</p><br>
               <h2>Images</h2></br>
+              <div class="lb-row">
+                <div class="lb-column">
+                  <img src="images/Saturn/small/saturn.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow">
+                </div>
+                <div class="lb-column">
+                  <img src="images/Saturn/small/cassini_flyby.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow">
+                </div>
+                <div class="lb-column">
+                  <img src="images/Saturn/small/saturn_moons.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow">
+                </div>
+                <div class="lb-column">
+                  <img src="images/Saturn/small/titan.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow">
+                </div>
+              </div>
+              <div id="myModal" class="modal">
+                <span class="close cursor" onclick="closeModal()">&times;</span>
+                <div class="modal-content">
+                  <div class="mySlides">
+                    <div class="numbertext">1 / 4</div>
+                    <img src="images/Saturn/large/saturn.jpg" style="width:100%">
+                  </div>
+                  <div class="mySlides">
+                    <div class="numbertext">2 / 4</div>
+                    <img src="images/Saturn/large/cassini_flyby.jpg" style="width:100%">
+                  </div>
+                  <div class="mySlides">
+                    <div class="numbertext">3 / 4</div>
+                    <img src="images/Saturn/large/saturn_moons.jpg" style="width:100%">
+                  </div>
+                  <div class="mySlides">
+                    <div class="numbertext">4 / 4</div>
+                    <img src="images/Saturn/large/titan.jpg" style="width:100%">
+                  </div>
+                  <a class="lb-prev" onclick="plusSlides(-1)">&#10094;</a>
+                  <a class="lb-next" onclick="plusSlides(1)">&#10095;</a>
+                  <div class="caption-container">
+                    <p id="caption"></p>
+                  </div>
+                  <div class="lb-column">
+                    <img class="demo" src="images/Saturn/small/saturn.jpg" onclick="currentSlide(1)" alt="An image of Saturn">
+                  </div>
+                  <div class="lb-column">
+                    <img class="demo" src="images/Saturn/small/cassini_flyby.jpg" onclick="currentSlide(2)" alt="An artist's rendition of the Cassini probe flying past Saturn">
+                  </div>
+                  <div class="lb-column">
+                    <img class="demo" src="images/Saturn/small/saturn_moons.jpg" onclick="currentSlide(3)" alt="A diagram of the moons of Saturn">
+                  </div>
+                  <div class="lb-column">
+                    <img class="demo" src="images/Saturn/small/titan.jpg" onclick="currentSlide(4)" alt="One of the only images of Titan">
+                  </div>
+                </div>
+              </div></br>
               <a href="jupiter.html" class="previous">&laquo; Previous: Jupiter</a>
               <a href="uranus.html" class="Next">Next: Uranus &raquo;</a>
             </div>
           </div>
         </div>
       </div>
+      <script src="js/lightbox.js"></script>
   </body>
 </html>

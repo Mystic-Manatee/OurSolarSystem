@@ -47,11 +47,64 @@
               <span></span>
               <p>The Moon is the only object outside of Earth that has been visited by humans. The Apollo missions 11, 12, 14, 15, 16 and 17 were all successful in taking humans to the surface of the Moon. Over the course of the missions many photographs and over 400kg of samples were brought back to Earth.</p></br>
               <h2>Images</h2></br>
+              <div class="lb-row">
+                <div class="lb-column">
+                  <img src="images/Earth/small/The_Earth_seen_from_Apollo_17.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow">
+                </div>
+                <div class="lb-column">
+                  <img src="images/Earth/small/earth-cross-section.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow">
+                </div>
+                <div class="lb-column">
+                  <img src="images/Earth/small/FullMoon2010.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow">
+                </div>
+                <div class="lb-column">
+                  <img src="images/Earth/small/lunar_phase.jpeg" onclick="openModal();currentSlide(4)" class="hover-shadow">
+                </div>
+              </div>
+              <div id="myModal" class="modal">
+                <span class="close cursor" onclick="closeModal()">&times;</span>
+                <div class="modal-content">
+                  <div class="mySlides">
+                    <div class="numbertext">1 / 4</div>
+                    <img src="images/Earth/large/The_Earth_seen_from_Apollo_17.jpg" style="width:100%">
+                  </div>
+                  <div class="mySlides">
+                    <div class="numbertext">2 / 4</div>
+                    <img src="images/Earth/large/earth-cross-section.jpg" style="width:100%">
+                  </div>
+                  <div class="mySlides">
+                    <div class="numbertext">3 / 4</div>
+                    <img src="images/Earth/large/FullMoon2010.jpg" style="width:100%">
+                  </div>
+                  <div class="mySlides">
+                    <div class="numbertext">4 / 4</div>
+                    <img src="images/Earth/large/lunar_phase.jpeg" style="width:100%">
+                  </div>
+                  <a class="lb-prev" onclick="plusSlides(-1)">&#10094;</a>
+                  <a class="lb-next" onclick="plusSlides(1)">&#10095;</a>
+                  <div class="caption-container">
+                    <p id="caption"></p>
+                  </div>
+                  <div class="lb-column">
+                    <img class="demo" src="images/Earth/small/The_Earth_seen_from_Apollo_17.jpg" onclick="currentSlide(1)" alt="An image of Earth taken from the Apollo 17 mission">
+                  </div>
+                  <div class="lb-column">
+                    <img class="demo" src="images/Earth/small/earth-cross-section.jpg" onclick="currentSlide(2)" alt="A cross section of the Earth, showing the crust, outer mantle, inner mantle and iron core">
+                  </div>
+                  <div class="lb-column">
+                    <img class="demo" src="images/Earth/small/FullMoon2010.jpg" onclick="currentSlide(3)" alt="An image of the Moon">
+                  </div>
+                  <div class="lb-column">
+                    <img class="demo" src="images/Earth/small/lunar_phase.jpeg" onclick="currentSlide(4)" alt="A diagram showing how the different phases of the moon happen">
+                  </div>
+                </div>
+              </div></br>
               <a href="venus.html" class="previous">&laquo; Previous: Venus</a>
               <a href="mars.html" class="Next">Next: Mars &raquo;</a>
             </div>
           </div>
         </div>
       </div>
+      <script src="js/lightbox.js"></script>
   </body>
 </html>

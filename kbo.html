@@ -26,11 +26,44 @@
               <span></span>
               <p>The New Horizons mission is currently studying the Kuiper belt after it completed its mission to view Pluto and its largest moon Charon in 2016.</p></br>
               <h2>Images</h2></br>
+              <div class="lb-row">
+                <div class="lb-column">
+                  <img src="images/KBO/small/kuiper-belt.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow">
+                </div>
+                <div class="lb-column">
+                  <img src="images/KBO/small/KuiperBeltObjects.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow">
+                </div>
+              </div>
+              <div id="myModal" class="modal">
+                <span class="close cursor" onclick="closeModal()">&times;</span>
+                <div class="modal-content">
+                  <div class="mySlides">
+                    <div class="numbertext">1 / 4</div>
+                    <img src="images/KBO/large/kuiper-belt.jpg" style="width:100%">
+                  </div>
+                  <div class="mySlides">
+                    <div class="numbertext">2 / 4</div>
+                    <img src="images/KBO/large/KuiperBeltObjects.jpg" style="width:100%">
+                  </div>
+                  <a class="lb-prev" onclick="plusSlides(-1)">&#10094;</a>
+                  <a class="lb-next" onclick="plusSlides(1)">&#10095;</a>
+                  <div class="caption-container">
+                    <p id="caption"></p>
+                  </div>
+                  <div class="lb-column">
+                    <img class="demo" src="images/KBO/small/kuiper-belt.jpg" onclick="currentSlide(1)" alt="An image showing the location of the Kuiper Belt in our Solar System">
+                  </div>
+                  <div class="lb-column">
+                    <img class="demo" src="images/KBO/small/KuiperBeltObjects.jpg" onclick="currentSlide(2)" alt="A list of the largest objects in the Kuiper Belt">
+                  </div>
+                </div>
+              </div></br>
               <a href="asteroids.html" class="previous">&laquo; Previous: Asteroids vs Comets</a>
               <a href="quiz.html" class="Next">Next: Take the quiz &raquo;</a>
             </div>
           </div>
         </div>
       </div>
+      <script src="js/lightbox.js"></script>
   </body>
 </html>

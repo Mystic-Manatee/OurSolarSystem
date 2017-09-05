@@ -15,7 +15,6 @@
       <div class="outside">
         <div class="buffer">
           <div class="content">
-            <img src="images/placeholder.png" alt="an image of the sun" class="img-thumbnail" align="right">
             <h1 class="heading1">Venus</h1>
             <div class="content-pane">
               <h2>Overview</h2>
@@ -36,11 +35,64 @@
               <span></span>
               <p>Due to the inhospitable environment on the surface, the Venera mission to Venus was not very successful. The robots were sent to the planet by the Soviet Russians during the 1970&apos;s and 1980&apos;s and would not last longer than 2 hours on the surface. </p></br>
               <h2>Images</h2></br>
+              <div class="lb-row">
+                <div class="lb-column">
+                  <img src="images/Venus/small/venus.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow">
+                </div>
+                <div class="lb-column">
+                  <img src="images/Venus/small/venussurface.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow">
+                </div>
+                <div class="lb-column">
+                  <img src="images/Venus/small/VenusUV_NASA4X3.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow">
+                </div>
+                <div class="lb-column">
+                  <img src="images/Venus/small/mariner2-venus.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow">
+                </div>
+              </div>
+              <div id="myModal" class="modal">
+                <span class="close cursor" onclick="closeModal()">&times;</span>
+                <div class="modal-content">
+                  <div class="mySlides">
+                    <div class="numbertext">1 / 4</div>
+                    <img src="images/Venus/large/venus.jpg" style="width:100%">
+                  </div>
+                  <div class="mySlides">
+                    <div class="numbertext">2 / 4</div>
+                    <img src="images/Venus/large/venussurface.jpg" style="width:100%">
+                  </div>
+                  <div class="mySlides">
+                    <div class="numbertext">3 / 4</div>
+                    <img src="images/Venus/large/VenusUV_NASA4X3.jpg" style="width:100%">
+                  </div>
+                  <div class="mySlides">
+                    <div class="numbertext">4 / 4</div>
+                    <img src="images/Venus/large/mariner2-venus.jpg" style="width:100%">
+                  </div>
+                  <a class="lb-prev" onclick="plusSlides(-1)">&#10094;</a>
+                  <a class="lb-next" onclick="plusSlides(1)">&#10095;</a>
+                  <div class="caption-container">
+                    <p id="caption"></p>
+                  </div>
+                  <div class="lb-column">
+                    <img class="demo" src="images/Venus/small/venus.jpg" onclick="currentSlide(1)" alt="An image of Venus">
+                  </div>
+                  <div class="lb-column">
+                    <img class="demo" src="images/Venus/small/venussurface.jpg" onclick="currentSlide(2)" alt="One of the only images taken from the surface of Venus by a USSR rover">
+                  </div>
+                  <div class="lb-column">
+                    <img class="demo" src="images/Venus/small/VenusUV_NASA4X3.jpg" onclick="currentSlide(3)" alt="An artist's rendition of Venus">
+                  </div>
+                  <div class="lb-column">
+                    <img class="demo" src="images/Venus/small/mariner2-venus.jpg" onclick="currentSlide(4)" alt="An image from the mariner mission showing the different temperature regions of the planet">
+                  </div>
+                </div>
+              </div></br>
               <a href="mercury.html" class="previous">&laquo; Previous: Mercury</a>
               <a href="earth.html" class="Next">Next: Earth &raquo;</a>
             </div>
           </div>
         </div>
       </div>
+      <script src="js/lightbox.js"></script>
   </body>
 </html>

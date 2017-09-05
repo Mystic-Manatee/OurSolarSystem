@@ -39,11 +39,64 @@
               <span></span>
               <p>There have been 2 unmanned missions to Mercury so far. The first was Mariner 10 in 1974/75 with three fly-bys to take pictures of half of the planet. Then in 2005 the MESSENGER probe was sent to take more complex measurements of the planet including the geology and nature of the planets magnetic field, once the MESSENGER probe completed its mission in 2015 it was programmed to use the last of its fuel to take it out of orbit around Mercury and crash into the planet.</p></br>
               <h2>Images</h2></br>
+              <div class="lb-row">
+                <div class="lb-column">
+                  <img src="images/Mercury/small/mercury.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow">
+                </div>
+                <div class="lb-column">
+                  <img src="images/Mercury/small/Mercurycraters.jpeg" onclick="openModal();currentSlide(2)" class="hover-shadow">
+                </div>
+                <div class="lb-column">
+                  <img src="images/Mercury/small/mercurytectonics.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow">
+                </div>
+                <div class="lb-column">
+                  <img src="images/Mercury/small/messenger.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow">
+                </div>
+              </div>
+              <div id="myModal" class="modal">
+                <span class="close cursor" onclick="closeModal()">&times;</span>
+                <div class="modal-content">
+                  <div class="mySlides">
+                    <div class="numbertext">1 / 4</div>
+                    <img src="images/Mercury/large/mercury.jpg" style="width:100%">
+                  </div>
+                  <div class="mySlides">
+                    <div class="numbertext">2 / 4</div>
+                    <img src="images/Mercury/large/Mercurycraters.jpeg" style="width:100%">
+                  </div>
+                  <div class="mySlides">
+                    <div class="numbertext">3 / 4</div>
+                    <img src="images/Mercury/large/mercurytectonics.jpg" style="width:100%">
+                  </div>
+                  <div class="mySlides">
+                    <div class="numbertext">4 / 4</div>
+                    <img src="images/Mercury/large/messenger.jpg" style="width:100%">
+                  </div>
+                  <a class="lb-prev" onclick="plusSlides(-1)">&#10094;</a>
+                  <a class="lb-next" onclick="plusSlides(1)">&#10095;</a>
+                  <div class="caption-container">
+                    <p id="caption"></p>
+                  </div>
+                  <div class="lb-column">
+                    <img class="demo" src="images/Mercury/small/mercury.jpg" onclick="currentSlide(1)" alt="An image of Mercury">
+                  </div>
+                  <div class="lb-column">
+                    <img class="demo" src="images/Mercury/small/Mercurycraters.jpeg" onclick="currentSlide(2)" alt="A map of all the named craters on Mercury">
+                  </div>
+                  <div class="lb-column">
+                    <img class="demo" src="images/Mercury/small/mercurytectonics.jpg" onclick="currentSlide(3)" alt="Images taken from MESSENGER showing the planets tectonic activity">
+                  </div>
+                  <div class="lb-column">
+                    <img class="demo" src="images/Mercury/small/messenger.jpg" onclick="currentSlide(4)" alt="An artist's rendition of the MESSENGER probe in orbit around Mercury">
+                  </div>
+                </div>
+              </div></br>
               <a href="planets.html" class="previous">&laquo; Previous: The different kinds of planets</a>
               <a href="venus.html" class="next">Next: Venus &raquo;</a>
             </div>
           </div>
         </div>
       </div>
+      <script src="js/lightbox.js"></script>
   </body>
 </html>
