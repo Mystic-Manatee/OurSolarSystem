@@ -229,6 +229,7 @@ a .next, .previous {
   padding: 0;
   width: 90%;
   max-width: 1200px;
+  display: block;
 }
 
 /* The Close Button */
@@ -298,6 +299,10 @@ a .next, .previous {
 
 img.demo {
   opacity: 0.6;
+}
+
+cursor{
+  cursor: pointer;
 }
 
 .active,
