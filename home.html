@@ -1,55 +1,68 @@
 <html>
-  <head>
+
+<head>
     <title>Our Solar System</title>
-    <link rel="shortcut icon"href="images/favicon.ico">
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link rel="stylesheet" type="text/css" href="css/style.css">
-  </head>
-  <body style="background-image: url(ep_naturalblack.png); background-repeat: repeat;"> 
+</head>
+
+<body style="background-image: url(ep_naturalblack.png); background-repeat: repeat;">
     <div class="topnav" id="myTopnav">
-      <a href="home.html">Home</a>
-      <a href="readings.html">Readings</a>
-      <a href="quiz.html">Quiz</a>
-      <a href="simulation.html">Simulation</a>
+        <a href="home.html">Home</a>
+        <a href="readings.html">Readings</a>
+        <a href="quiz.html">Quiz</a>
+        <a href="simulation.html">Simulation</a>
     </div>
     <div class="outside">
-      <div class="buffer">
-        <div class="content">
-          <div class="slideshow-container">
-            <div class="mySlides fade">
-              <div class="numbertext">1 / 3</div>
-              <a href="readings.html">
-                <img src="images/carousel/galaxy-background.png">
-              </a>
+        <div class="buffer">
+            <div class="content">
+                <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                    <!-- Indicators -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#myCarousel" data-slide-to="1"></li>
+                        <li data-target="#myCarousel" data-slide-to="2"></li>
+                    </ol>
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner">
+                        <div class="item active">
+                          <a href="sun.html">
+                            <img src="images/carousel/space-aia-eruption-of-sun-hd.jpg" alt="Sun erupting" style="width:100%;">
+                          </a>
+                        </div>
+                        <div class="item">
+                          <a href="quiz.html">
+                            <img src="images/carousel/planets-of-the-solar-system.jpg" alt="planets of the solar system" style="width:100%;">
+                          </a>  
+                        </div>
+                        <div class="item">
+                          <a href="readings.html">
+                            <img src="images/carousel/galaxy-background.png" alt="the galaxy" style="width:100%;">
+                          </a>
+                        </div>
+                        <!-- Left and right controls -->
+                        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                          <span class="glyphicon glyphicon-chevron-left"></span>
+                           <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                          <span class="glyphicon glyphicon-chevron-right"></span>
+                          <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+                <span></span>
+                <h2>Welcome to Our Solar System!</h2>
+                </br>
+                <p><b>How to use the site:</b></p>
+                <p>You can view the content in one of two ways, either through reading the content in the planets section or interacting with the simulator. Once you have gone through the content finish by trying out the quiz.</p>
+                </br>
             </div>
-            <div class="mySlides fade">
-              <div class="numbertext">2 / 3</div>
-              <a href="quiz.html">
-                <img src="images/carousel/planets-of-the-solar-system.jpg">
-              </a>
-            </div>
-            <div class="mySlides fade">
-              <div class="numbertext">3 / 3</div>
-              <a href="sun.html">
-                <img src="images/carousel/space-aia-eruption-of-sun-hd.jpg">
-              </a>
-            </div>
-            <a class="img-prev" onclick="plusSlides(-1)">&#10094;</a>
-            <a class="img-next" onclick="plusSlides(1)">&#10095;</a>
-          </div>
-          <br>
-          <div style="text-align:center">
-            <span class="dot" onclick="currentSlide(1)"></span> 
-            <span class="dot" onclick="currentSlide(2)"></span> 
-            <span class="dot" onclick="currentSlide(3)"></span> 
-          </div>
-          <span></span>
-          <h2>Welcome to Our Solar System!</h2></br>
-          <p><b>How to use the site:</b></p>
-          <p>You can view the content in one of two ways, either through reading the content in the planets section or interacting with the simulator. Once you have gone through the content finish by trying out the quiz.</p></br>
         </div>
-      </div>
     </div>
-    <script src="js/image-carousel.js"></script>
-  </body>
+</body>
+
 </html>
