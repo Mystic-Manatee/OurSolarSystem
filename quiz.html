@@ -1,11 +1,10 @@
+<!DOCTYPE html>
 <html>
   <head>
     <title>Quiz - Our Solar System</title>
     <link rel="shortcut icon"href="images/favicon.ico">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
-    <script src="js/jquery-3.2.1.min.js"></script>
-    <script src="js/main.js"></script>
   </head>
   <body style="background-image: url(ep_naturalblack.png); background-repeat: repeat;"> 
     <div class="topnav" id="myTopnav">
@@ -13,6 +12,7 @@
       <a href="readings.html">Readings</a>
       <a href="quiz.html">Quiz</a>
       <a href="simulation.html">Simulation</a>
+      <a href="more.html">Extra Content</a>
     </div>
       <div class="outside">
         <div class="buffer">
@@ -44,9 +44,9 @@
                 <input id="Q4" type="radio" name="question4" value="correct">Jupiter</br>
                 <input id="Q4" type="radio" name="question4" value="wrong">Uranus</br>
                 <h2>Q5: What is the smallest planet in the solar system?</h2>
+                <input id="Q5" type="radio" name="question5" value="correct">Pluto</br>
                 <input id="Q5" type="radio" name="question5" value="wrong">Venus</br>
                 <input id="Q5" type="radio" name="question5" value="wrong">Mars</br>
-                <input id="Q5" type="radio" name="question5" value="correct">Pluto</br>
                 <input id="Q5" type="radio" name="question5" value="wrong">Uranus</br>
                 <h2>Q6: What is the largest planet in the solar system?</h2>
                 <input id="Q6" type="radio" name="question6" value="wrong">Mars</br>
@@ -59,10 +59,10 @@
                 <input id="Q7" type="radio" name="question7" value="correct">Jovian</br>
                 <input id="Q7" type="radio" name="question7" value="wrong">Astral</br>
                 <h2>Q8: What is the third planet in the solar system?</h2>
+                <input id="Q8" type="radio" name="question8" value="correct">Earth</br>
                 <input id="Q8" type="radio" name="question8" value="wrong">Mars</br>
                 <input id="Q8" type="radio" name="question8" value="wrong">Saturn</br>
                 <input id="Q8" type="radio" name="question8" value="wrong">Pluto</br>
-                <input id="Q8" type="radio" name="question8" value="correct">Earth</br>
                 <h2>Q9: Pluto is located in what area of the solar system?</h2>
                 <input id="Q9" type="radio" name="question9" value="wrong">The Asteroid Belt</br>
                 <input id="Q9" type="radio" name="question9" value="correct">The Kuiper Belt</br>
@@ -74,11 +74,13 @@
                 <input id="Q10" type="radio" name="question10" value="correct">Venus</br>
                 <input id="Q10" type="radio" name="question10" value="wrong">Uranus</br>
                 <span></span>
-                <input type="button" name="submit" onclick="quiz()" value="Submit"/>
+                <input class="submitButton" type="button" name="submit" onclick="quiz()" value="Submit"/>
               </form>
             </div>
           </div>
         </div>
       </div>
+      <script src="js/jquery-3.2.1.min.js"></script>
+      <script src="js/main.js"></script>
   </body>
 </html>
