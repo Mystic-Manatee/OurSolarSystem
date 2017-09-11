@@ -47,34 +47,34 @@ function sortWrongAnswers(wrongAnswer){
     result = "";
     switch (wrongAnswer){
         case 1:
-            result = '<div class="alert alert-danger" role="alert">Unfortunately question '+ wrongAnswer +' is wrong, click <a href="sun.html" class="alert-link">here</a> to review the relevant content or try the quiz again.</div></br>';
+            result = '<div class="alert alert-danger" role="alert">Unfortunately question '+ wrongAnswer +' is wrong, click <a href="sun.html" class="alert-link" target="_blank">here</a> to review the relevant content or try the quiz again.</div></br>';
             break;
         case 2:
-            result = '<div class="alert alert-danger" role="alert">Unfortunately question '+ wrongAnswer +' is wrong, click <a href="mars.html" class="alert-link">here</a> to review the relevant content or try the quiz again.</div></br>';
+            result = '<div class="alert alert-danger" role="alert">Unfortunately question '+ wrongAnswer +' is wrong, click <a href="mars.html" class="alert-link" target="_blank">here</a> to review the relevant content or try the quiz again.</div></br>';
             break;
         case 3:
-            result = '<div class="alert alert-danger" role="alert">Unfortunately question '+ wrongAnswer +' is wrong, click <a href="neptune.html" class="alert-link">here</a> to review the relevant content or try the quiz again.</div></br>';
+            result = '<div class="alert alert-danger" role="alert">Unfortunately question '+ wrongAnswer +' is wrong, click <a href="neptune.html" class="alert-link" target="_blank">here</a> to review the relevant content or try the quiz again.</div></br>';
             break;
         case 4:
-            result = '<div class="alert alert-danger" role="alert">Unfortunately question '+ wrongAnswer +' is wrong, click <a href="jupiter.html" class="alert-link">here</a> to review the relevant content or try the quiz again.</div></br>';
+            result = '<div class="alert alert-danger" role="alert">Unfortunately question '+ wrongAnswer +' is wrong, click <a href="jupiter.html" class="alert-link" target="_blank">here</a> to review the relevant content or try the quiz again.</div></br>';
             break;
         case 5:
-            result = '<div class="alert alert-danger" role="alert">Unfortunately question '+ wrongAnswer +' is wrong, click <a href="pluto.html" class="alert-link">here</a> to review the relevant content or try the quiz again.</div></br>';
+            result = '<div class="alert alert-danger" role="alert">Unfortunately question '+ wrongAnswer +' is wrong, click <a href="pluto.html" class="alert-link" target="_blank">here</a> to review the relevant content or try the quiz again.</div></br>';
             break;
         case 6:
-            result = '<div class="alert alert-danger" role="alert">Unfortunately question '+ wrongAnswer +' is wrong, click <a href="jupiter.html" class="alert-link">here</a> to review the relevant content or try the quiz again.</div></br>';
+            result = '<div class="alert alert-danger" role="alert">Unfortunately question '+ wrongAnswer +' is wrong, click <a href="jupiter.html" class="alert-link" target="_blank">here</a> to review the relevant content or try the quiz again.</div></br>';
             break;
         case 7:
-            result = '<div class="alert alert-danger" role="alert">Unfortunately question '+ wrongAnswer +' is wrong, click <a href="planets.html" class="alert-link">here</a> to review the relevant content or try the quiz again.</div></br>';
+            result = '<div class="alert alert-danger" role="alert">Unfortunately question '+ wrongAnswer +' is wrong, click <a href="planets.html" class="alert-link" target="_blank">here</a> to review the relevant content or try the quiz again.</div></br>';
             break;
         case 8:
-            result = '<div class="alert alert-danger" role="alert">Unfortunately question '+ wrongAnswer +' is wrong, click <a href="earth.html" class="alert-link">here</a> to review the relevant content or try the quiz again.</div></br>';
+            result = '<div class="alert alert-danger" role="alert">Unfortunately question '+ wrongAnswer +' is wrong, click <a href="earth.html" class="alert-link" target="_blank">here</a> to review the relevant content or try the quiz again.</div></br>';
             break;
         case 9:
-            result = '<div class="alert alert-danger" role="alert">Unfortunately question '+ wrongAnswer +' is wrong, click <a href="kbo.html" class="alert-link">here</a> to review the relevant content or try the quiz again.</div></br>';
+            result = '<div class="alert alert-danger" role="alert">Unfortunately question '+ wrongAnswer +' is wrong, click <a href="kbo.html" class="alert-link" target="_blank">here</a> to review the relevant content or try the quiz again.</div></br>';
             break;
         case 10:
-            result = '<div class="alert alert-danger" role="alert">Unfortunately question '+ wrongAnswer +' is wrong, click <a href="planets.html" class="alert-link">here</a> to review the relevant content or try the quiz again.</div></br>';
+            result = '<div class="alert alert-danger" role="alert">Unfortunately question '+ wrongAnswer +' is wrong, click <a href="planets.html" class="alert-link" target="_blank">here</a> to review the relevant content or try the quiz again.</div></br>';
             break;
     }
     return result;
