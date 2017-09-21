@@ -1,9 +1,18 @@
+<!DOCTYPE html>
 <html>
   <head>
     <title>Planet Simulation - Our Solar System</title>
     <link rel="shortcut icon"href="images/favicon.ico">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link rel="stylesheet" href="TemplateData/style.css">
+    <script src="TemplateData/UnityProgress.js"></script>  
+    <script src="Build/UnityLoader.js"></script>
+    <script>
+      var gameInstance = UnityLoader.instantiate("gameContainer", "Build/Simulation.json", {onProgress: UnityProgress});
+    </script>
   </head>
   <body style="background-image: url(ep_naturalblack.png); background-repeat: repeat;"> 
     <div class="topnav" id="myTopnav">
@@ -16,7 +25,17 @@
       <div class="outside">
         <div class="buffer">
           <div class="content">
-            <img src="images/SimPlaceholder.png">
+            <h1>Simulation</h1></br>
+            <p>Instructions: Right click to lock or unlock the camera. When the camera is unlocked you will be able to move the camera around with your mouse.</p>
+            <p>Left click on any of the planets to learn more about them.</p>
+            <div class="webgl-content">
+              <div id="gameContainer" style="width: 960px; height: 600px"></div>
+              <div class="footer">
+                <!--<div class="webgl-logo"></div>
+                <div class="fullscreen" onclick="gameInstance.SetFullscreen(1)"></div>
+                 <div class="title">space_Simulation</div> -->
+              </div>
+            </div>
           </div>
         </div>
       </div>
